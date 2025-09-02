@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>🌐saikumar_ pujari</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="mediaqueries.css" />
+</head>
+
+<body>
+  <!-- navbar -->
+  <nav id="desktop-nav">
+    <div class="logo" id="my-baby"><b>SAIKUMAR</b></div>
+    <div>
+      <ul class="nav-links">
+        <li><a href="#about">Introduction</a></li>
+        <li><a href="#Journey">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+  <nav id="hamburger-nav">
+    <div class="logo">Saikumar</div>
+    <div class="hamburger-menu">
+      <div class="hamburger-icon" onclick="toggleMenu()">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <div class="menu-links">
+        <li><a href="#about" onclick="toggleMenu()">Introduction</a></li>
+        <li><a href="#Journey" onclick="toggleMenu()">Skills</a></li>
+        <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+        <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+      </div>
+    </div>
+  </nav>
+
+  <!-- homescrren-profie -->
+  <section id="profile">
+    <div class="section__pic-container">
+      <img src="./assets/profile-pic.png-modified.png" alt="Saikumar profile picture" />
+    </div>
+    <div class="section__text">
+      <p class="section__text__p1">Hello, I'm</p>
+      <h1 class="title" id="myName">Saikumar</h1>
+      <p class="section__text__p2">Aspiring Backend Software Engineer</p>
+      <div class="btn-container">
+
+        <button class="btn btn-color-2" onclick="window.clos('./assets/papers.pdf')">
+          <!-- the close should be opened -->
+          <!-- its under progeess   ./assets/resume.pdf -->
+          My papers
+          <span class="tooltip-text">☠️Still Working</span>
+        </button>
+
+        <button class="btn btn-color-1" onclick="location.href='./#contact'">
+          Contact Info
+        </button>
+      </div>
+      <div id="socials-container">
+        <img src="./assets/linkedin.png" alt="My LinkedIn profile" class="icon"
+          onclick="location.href='https://www.linkedin.com/in/saikumarpujarii/'" />
+        <img src="./assets/github.png" alt="My Github profile" class="icon"
+          onclick="location.href='https://github.com/saikumar-pujari'" />
+      </div>
+    </div>
+  </section>
+
+  <!-- aboout -->
+  <section id="about">
+    <p class="section__text__p1">Get To Know More about me</p>
+    <h1 class="title">Professional Summary</h1>
+    <div class="section-container">
+      <div class="section__pic-container">
+        <img src="./assets/about-pic-1.jpg" alt="Profile picture" class="about-pic" />
+      </div>
+      <div class="about-details-container">
+        <div class="about-containers">
+          <div class="details-container">
+            <img src="./assets/experience.png" alt="Experience icon" class="icon" />
+            <h3>My Learning Journey</h3>
+            <p>* Exploring DSA in <span>C++</span><br />* Backend Developer</p>
+          </div>
+          <div class="details-container">
+            <img src="./assets/education.png" alt="Education icon" class="icon" />
+            <h3>Education</h3>
+            <p>- B.E (CSE), [SMVIT], [2027] <br>
+              - Research Paper: (Ongoing)</p>
+          </div>
+        </div>
+        <div class="text-container">
+          <p>
+          <p style="
+                      background-color: #74515147;
+                      border: 2px solid #000;
+                      padding: 15px 25px;
+                      max-width: 700px;
+                      font-size: 1.1rem;
+                      font-weight: 600;
+                      border-radius: 8px;
+                      box-shadow: 0 2px 8px rgb(0 0 0 / 0.1);
+                      margin: 20px auto;
+                      text-align: center;
+              ">
+            Learning Backend Developer | AI Researcher | DSA in C++ | CSE @ Sir MVIT
+          <p>
+            Backend-focused Computer Science student (5th sem) at
+            <b>Sir M. Visvesvaraya Institute of Technology</b>. Passionate about building robust web systems using
+            <b>Django, Flask, and MySQL/SQL Server</b>. Skilled in <b>clean API design, performance optimization, and
+              problem-solving</b>.
+            Currently sharpening <b>DSA skills in C++</b>, exploring <b>system design</b> concepts, and learning <b>AI
+              through CS50</b>.
+            Actively contributing to <b>research papers</b> and developing <b>personal projects</b>. Outside of coding,
+            I love
+            <b>reading books, exploring new technologies, and solving logic puzzles</b>. Always learning, always
+            building — one logical layer at a time.
+          </p>
+
+        </div>
+      </div>
+    </div>
+    <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#Journey'" />
+  </section>
+
+  <!-- Journey -->
+  <!-- <section id="Journey">
+    <p class="section__text__p1">Explore My</p>
+    <h1 class="title">Journey</h1>
+    <div class="experience-details-container">
+      <div class="about-containers">
+        <div class="details-container">
+          <h2 class="experience-sub-title">Frontend Development</h2>
+          <div class="article-container">
+            <article>
+              <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+              <div>
+                <h3>HTML</h3>
+                <p>Experienced</p>
+              </div>
+            </article>
+            <article>
+              <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+              <div>
+                <h3>CSS</h3>
+                <p>Experienced</p>
+              </div>
+            </article>
+            <article>
+              <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+              <div>
+                <h3>Streamlit</h3>
+                <p>Intermediate</p>
+              </div>
+            </article>
+            <article>
+              <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+              <div>
+                <h3>JavaScript</h3>
+                <p>Basic</p>
+              </div>
+            </article>
+            <article>
+              <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+              <div>
+                <h3>TKinterface</h3>
+                <p>Basic</p>
+              </div>
+            </article>
+            <article>
+              <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+              <div>
+                <h3>Material UI</h3>
+                <p>Basic</p>
+              </div>
+            </article>
+          </div>
+        </div>
+        <div class="details-container">
+          <h2 class="experience-sub-title">Backend Development</h2>
+          <div class="article-container">
+            <article>
+              <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+              <div>
+                <h3>Flask</h3>
+                <p>Intermediate</p>
+              </div>
+            </article>
+            <article>
+              <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+              <div>
+                <h3>Django</h3>
+                <p>Experienced</p>
+              </div>
+            </article>
+            <article>
+              <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+              <div>
+                <h3>MySQL</h3>
+                <p>Experienced</p>
+              </div>
+            </article>
+            <article>
+              <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+              <div>
+                <h3> SQLite 3</h3>
+                <p>Intermediate</p>
+              </div>
+            </article>
+            <article>
+              <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+              <div>
+                <h3>Git</h3>
+                <p>Experienced</p>
+              </div>
+            </article>
+            <article>
+              <!-- <img src="./assets/checkmark.png" alt="Experience icon" class="icon" /> -->
+              <!-- <div>
+                <h3><b>---></b></h3>
+                <!-- <p>Still Learning and exploring</p>
+                
+              </div>
+            </article>
+          </div>
+        </div>
+        
+      </div>
+    </div>
+  </section> --> 
+
+
+  <!-- ## -->
+<section id="Journey">
+  <p class="section__text__p1">Explore My</p>
+  <h1 class="title">Skills & technologies</h1>
+
+  <!-- Backend & Data Science -->
+  <div class="journey-section">
+      <img src="assets/artificial-intelligence.png" alt="My LinkedIn profile" class="icon">
+    <h2 class="journey-subtitle">Backend(Python)</h2>
+    <p class="journey-desc">
+     Backend development is where logic meets scalability — turning raw data into seamless user experiences
+    </p>
+    <div class="icon-slider">
+      <div class="icon-track">
+        <img src="assets/python-original.svg" alt="Python" />
+        <img src="./assets/c-original.svg" alt="C" />
+        <img src="./assets/cplusplus-original.svg" alt="CPP" />
+        <img src="./assets/django-plain.svg" alt="Django" />
+        <img src="./assets/flask-original.svg" alt="flask" />
+        <img src="./assets/java-original.svg" alt="java" />
+        <img src="./assets/markdown-original.svg" alt="markdown" />
+        <img src="./assets/mysql-original.svg" alt="MySQL" />
+        <img src="./assets/sqlite-original.svg" alt="SQL-based" />
+        <img src="./assets/mongodb-original.svg" alt="mongodb" />
+        <img src="./assets/bootstrap-original.svg" alt="bootstrap" />
+        <img src="./assets/docker-original.svg" alt="docker" />
+        <img src="./assets/amazonwebservices-line-wordmark.svg" alt="AWS" />
+        <img src="./assets/vscode-original.svg" alt="vscode" />
+        <img src="./assets/visualstudio-plain.svg" alt="visualstudio" />
+        
+        
+      </div>
+    </div>
+  </div>
+  
+  <!-- Frontend Development -->
+  <div class="journey-section">
+    <img src="assets/website.png" alt="frontend-icon" class="icon">
+    <h2 class="journey-subtitle">Frontend Development</h2>
+    <p class="journey-desc">
+      Turning pixels into experiences — where code becomes creativity
+    </p>
+    <div class="icon-slider">
+      <div class="icon-track">
+        <img src="./assets/aftereffects-original.svg" alt="aftereffects" />
+        <img src="./assets/html5-original.svg" alt="HTML" />
+        <img src="./assets/css3-original.svg" alt="CSS" />
+        <img src="./assets/typescript-original.svg" alt="typescript" />
+        <img src="./assets/react-original.svg" alt="react" />
+        <img src="./assets/javascript-original.svg" alt="JavaScript" />
+        <img src="./assets/php-original.svg" alt="php" />
+        <img src="./assets/photoshop-plain.svg" alt="photoshop" />
+      </div>
+    </div>
+  </div>
+
+  <!-- Tools & Platforms -->
+  <div class="journey-section">
+     <img src="assets/connection.png" alt="Tools icon" class="icon">
+    <h2 class="journey-subtitle">Tools & Platforms</h2>
+    <p class="journey-desc">
+      From version control to deployment, tools and platforms make innovation repeatable
+    </p>
+    <div class="icon-slider">
+      <div class="icon-track">
+        <img src="./assets/bash-original.svg" alt="Bash" />
+        <img src="./assets/chrome-original.svg" alt="chrome" />
+        <img src="./assets/electron-original.svg" alt="electron" />
+        <img src="./assets/github.png" alt="github" />
+        <img src="./assets/git-original.svg" alt="Git" />
+        <img src="./assets/googlecloud-original.svg" alt="googlecloud" />
+        <img src="./assets/linux-original.svg" alt="linux" />
+        <img src="./assets/linkedin.png" alt="linkedin" />
+        <img src="./assets/windows8-original.svg" alt="window" />
+        <img src="./assets/pycharm-original.svg" alt="pycharm" />
+        <img src="./assets/unity-original.svg" alt="unity" />
+        <!-- duplicate-items -->
+
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+
+<!-- ## -->
+
+  
+  <!-- projects -->
+  <section id="projects">
+    <p class="section__text__p1">Browse My Recent</p>
+    <h1 class="title">Projects</h1>
+    <div class="experience-details-container">
+      <div class="about-containers">
+
+        <!-- project-1 -->
+        <div class="details-container color-container"
+          style="max-width: 500px; padding: 20px; border: 1px solid #ddd; border-radius: 8px; background: #fafafa;">
+          <h2 class="experience-sub-title project-title" style="font-size: 1.3rem; margin-bottom: 6px; color: #222;">
+            Invoicia — Smart Invoicing SaaS
+          </h2>
+          <p style="color: #0a74da; font-weight: 600; margin: 0 0 10px 0;">Ongoing Project</p>
+          <p class="project-duration" style="font-size: 0.9rem; color: #666; margin-bottom: 12px;">
+            Mar 2025 - Present
+          </p>
+          <p class="project-description" style="font-size: 1rem; line-height: 1.4; color: #444;">
+            Full-stack SaaS platform built with <b> Django </b> and React.js to simplify invoicing for freelancers.
+            Developed
+            secure REST APIs with JWT auth and role-based access. Integrated asynchronous tasks using Celery + Redis for
+            PDF generation and email alerts.
+            <br><br>
+            Implemented dynamic invoice and client management, search filters, and CRUD operations with smooth UX.
+            Included mock payment flows (Stripe & PayPal), deployed via Docker and CI/CD on Render.
+            <br><br>
+            Focused on modular code, unit testing, and robust <b> backend performance </b>, ensuring scalability and
+            maintainability for real-world SaaS usage.
+          </p>
+        </div>
+
+        <!-- project-2 -->
+        <div class="details-container color-container"
+          style="max-width: 500px; padding: 20px; border: 1px solid #ddd; border-radius: 8px; background: #fafafa; ">
+          <h2 class="experience-sub-title project-title" style="font-size: 1.3rem; margin-bottom: 6px; color: #222;">
+            RetailMetrics — SQL Data Warehouse for BI
+          </h2>
+          <p style="color: #0a74da; font-weight: 600; margin: 0 0 10px 0;">Ongoing Project</p>
+          <p class="project-duration" style="font-size: 0.9rem; color: #666; margin-bottom: 12px;">
+            May 2025 - Aug 2025
+          </p>
+          <p class="project-description" style="font-size: 1rem; line-height: 1.4; color: #444;">
+            Built an advanced SQL-based data warehouse simulating a retail e-commerce platform. Designed normalized and
+            denormalized schemas, developed views, CTEs, window functions, and materialized views for performance.
+            <br><br>
+            Delivered business intelligence insights like CLV, RFM analysis, and sales forecasting using pure SQL.
+            Optimized complex queries with indexing, partitions, and EXPLAIN plans — powering analytical dashboards with
+            no-code pipelines.
+            <br><br>
+            Developed multi-layered SQL pipelines with raw-to-staging-to-core transformations using CTEs, temp tables,
+            and window functions. Queries powered metrics such as Avg Order Value, Top Customers, Repeat Purchase Rate,
+            and CLV segmentation.
+          </p>
+        </div>
+
+        <!-- #projects-3 -->
+        <div class="details-container color-container"
+          style="max-width: 500px; padding: 20px; border: 1px solid #ddd; border-radius: 8px; background: #fafafa;">
+          <h2 class="experience-sub-title project-title" style="font-size: 1.3rem; margin-bottom: 6px; color: #222;">
+            Code Experiments in C++
+          </h2>
+          <p style="color: #0ada53; font-weight: 600; margin: 0 0 10px 0;">Completed Project</p>
+          <p class="project-duration" style="font-size: 0.9rem; color: #666; margin-bottom: 12px;">
+            Nov 2024 - Jan 2025
+          </p>
+          <p class="project-description" style="font-size: 1rem; line-height: 1.4; color: #444;">
+            I have developed multiple C++ projects that blend creativity with technical depth. Starting with a <b> Tic
+              Tac Toe game </b>, I implemented structured logic and interactive gameplay. I then created a <b> Brick
+              Breaker game </b>, handling collision detection, real-time movement, and controls. A <b> Calculator
+              project </b> further strengthened my command of arithmetic precision and console interface design. I also
+            built a <b> Rock Paper Scissors game </b>, applying randomization and decision-making logic for interactive
+            play. Beyond games, I explored <b> STL-based projects </b> using vectors, maps, sets, queues, and priority
+            queues to solve real-world style problems. These projects not only improved my coding style but also
+            enhanced modular programming and reusability. Collectively, they showcase my mastery of C++ fundamentals and
+            ability to apply them in both fun and practical contexts.
+          </p>
+        </div>
+
+
+
+        <!-- <div class="details-container color-container">
+          <div class="article-container">
+            <img src="./assets/project-2.png" alt="Project 2" class="project-img" />
+          </div>
+          <h2 class="experience-sub-title project-title">Project Two</h2>
+          <div class="btn-container">
+            <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/'">
+              Github
+            </button>
+            <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/'">
+              Live Demo
+            </button>
+          </div>
+        </div> -->
+
+
+        <!-- <div class="details-container color-container">
+          <div class="article-container">
+            <img src="./assets/project-3.png" alt="Project 3" class="project-img" />
+          </div>
+          <h2 class="experience-sub-title project-title">Project Three</h2>
+          <div class="btn-container">
+            <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/'">
+              Github
+            </button>
+            <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/'">
+              Live Demo
+            </button>
+          </div>
+        </div> -->
+
+        
+      </div>
+    </div>
+    <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#contact'" />
+  </section>
+
+  <!-- contact -->
+  <section id="contact">
+    <p class="section__text__p1">Get in Touch</p>
+    <h1 class="title">Contact Me</h1>
+    <div class="contact-info-upper-container">
+      <div class="contact-info-container">
+        <img src="./assets/email.png" alt="Email icon" class="icon contact-icon email-icon" />
+        <p><a href="mailto:saikumarpujari2005@gmail.com">saikumarpujari068@gmail.com</a></p>
+      </div>
+      <div class="contact-info-container">
+        <img src="./assets/linkedin.png" alt="LinkedIn icon" class="icon contact-icon" />
+        <p><a href="https://www.linkedin.com/in/saikumarpujarii/">/saikumarpujarii</a></p>
+      </div>
+      <div class="contact-info-container">
+        <img src="./assets/github.png" alt="LinkedIn icon" class="icon contact-icon" />
+        <p><a href="https://github.com/saikumar-pujari">/saikumarpujarii</a></p>
+      </div>
+    </div>
+  </section>
+
+<main>
+  <!-- suggestion box -->
+  <h2 style="text-align: center;"> Your Suggestions <br>
+  Straight to My Inbox 📩</h2>
+  <div class="inbox-section">
+    <input type="text" placeholder="" class="inbox-input">
+  <button class="inbox-btn" >Send </button>
+</div>
+
+  
+
+  <footer>
+    <nav>
+      <div class="nav-links-container">
+        <ul class="nav-links">
+          <li><a href="#about">Introduction</a></li>
+          <li><a href="#Journey">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <p>saikumar pujari  &#169; 2025 <br> All Rights Reserved.</p>
+  </footer>
+  </main>
+  <script src="script.js"></script>
+</body>
+
+</html>
